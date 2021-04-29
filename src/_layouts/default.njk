@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="/assets/main.css?{{ cacheBust.mainCss }}" />
+    <link rel="stylesheet" href="/assets/vendor.js?{{ cacheBust.vendorJs }}" />
+    <link rel="stylesheet" href="/assets/main.js?{{ cacheBust.mainJs }}" />
+  </head>
+  <body>
+
+{{ content | safe }}
+
+
+    <script src="/assets/vendor.js?<%- Date.now() %>"></script>
+    <script src="/assets/main.js?<%- Date.now() %>"></script>
+  </body>
+  </html>

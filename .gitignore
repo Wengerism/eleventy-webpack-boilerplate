@@ -1,0 +1,5 @@
+node_modules
+/src/compiled-assets/
+dist
+# Local Netlify folder
+.netlify
