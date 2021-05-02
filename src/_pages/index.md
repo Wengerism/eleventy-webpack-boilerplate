@@ -1,6 +1,6 @@
 ---
 title: My boilerplate site
-layout: default.njk
+layout: "default.njk"
 ---
 
 # Hello, world

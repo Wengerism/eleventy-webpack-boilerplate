@@ -28,7 +28,9 @@
 			</nav>
 		</div>
 
-{{ content | safe }}
+		{% block content %}
+      {{ content | safe }}
+    {% endblock content %}
 
 
     <script src="/assets/vendor.js?<%- Date.now() %>"></script>
