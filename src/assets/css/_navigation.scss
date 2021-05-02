@@ -1,0 +1,84 @@
+$greyblue: #29313f;
+$darker: #2d3644;
+$text: #5d5f5f;
+$menu: #242323;
+
+.nav-list {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 1rem;
+}
+
+.nav-links {
+	list-style: none;
+	a {
+		color: #ccc;
+		font-weight: 200;
+		font-size: 1rem;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: orange;
+	}
+}
+
+.active {
+	border-bottom: 10px solid grey;
+}
+
+.line2 {
+	opacity: 0;
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(5px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(50px);
+	}
+}
+
+// BELOW FROM UNCLUTTERED SITE
+.toggler .line1 {
+	// transform: rotate(135deg) translate(-5px, 6px);
+	transform: rotate(315deg) translate(-5.5px, 4px);
+}
+
+.toggler .line2 {
+	opacity: 0;
+}
+
+.toggler .line3 {
+	transform: rotate(405deg) translate(-5.5px, -4px);
+}
+
+.burger div {
+	width: 30px;
+	height: 2px;
+	background-color: #ccc;
+	margin: 5px;
+	transition: all 0.5s ease;
+}
+
+.burger {
+	position: fixed;
+	cursor: pointer;
+	top: 20px;
+	right: 20px;
+	z-index: 100;
+	visibility: hidden;
+}
+
+nav {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	padding: 0;
+	margin-top: 0;
+}

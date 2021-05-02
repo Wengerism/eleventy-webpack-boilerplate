@@ -1,0 +1,41 @@
+@media screen and (max-width: 800px) {
+	.burger {
+		visibility: visible;
+	}
+
+	.nav-list {
+		background: #444650;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 75vw;
+		flex-direction: column;
+		transform: translateX(-100%);
+		transition: transform 0.95s ease-in-out;
+		z-index: 8;
+		justify-content: flex-start;
+		padding-top: 20vh;
+	}
+
+	.nav-active {
+		transform: translateY(0%);
+	}
+
+	.nav-links {
+		opacity: 0;
+	}
+
+	.nav-links {
+		color: #fff;
+		padding: 1.5rem 0;
+		a {
+			color: $grey;
+			font-size: 1.5rem;
+		}
+	}
+
+	.nav-active {
+		transform: translateY(0%);
+	}
+}
